@@ -363,30 +363,33 @@ google-cloud-firestore
 requests
 ```
 And we also need to install all needed libraries with `pip install` and configure GCP environment on our machine.
+
+
+
 ### The execution:
 
 1) Execute `create_function.py`. It will create all needed infrastructure and deploy our serverless function.
-2) 
-![](https://github.com/Briez-b/python-gcp-function/blob/main/Pasted%20image%2020260330060502.png)
 
-1) Execute url and see if new entry is in firestore database
+![](Pasted%20image%2020260330060502.png)
 
-![](https://github.com/Briez-b/python-gcp-function/blob/main/Pasted%20image%20260330060624.png)
+2) Execute url and see if new entry is in firestore database
 
-Here we can see the database really created and new entry was written to database `bryshten-test3:
-![](https://github.com/Briez-b/python-gcp-function/blob/main/Pasted%20image%20260330060716.png)
+![](Pasted%20image%2020260330060624.png)
 
- Also check if alerts and function really work:
+Here we can see the database really created and new entry was written to database `bryshten-test3`:
 
-![](https://github.com/Briez-b/python-gcp-function/blob/main/Pasted%20image%20260330060948.png)
- 
+![](Pasted%20image%2020260330060716.png)
+
+3) Check if alerts and function really work:
+
+![](Pasted%20image%2020260330060948.png)
+
 And let's create incident by deleting database `bryshten-test3.py` and executing function again to be sure alert works
 
-![](https://github.com/Briez-b/python-gcp-function/blob/main/Pasted%20image%20260330061216.png)
+![](Pasted%20image%2020260330061216.png)
 
-![](https://github.com/Briez-b/python-gcp-function/blob/main/Pasted%20image%20260330061228.png)
+![](Pasted%20image%2020260330061228.png)
 
-![](https://github.com/Briez-b/python-gcp-function/blob/main/Pasted%20image%20260330061629.png)
-
+![](Pasted%20image%2020260330061629.png)
 
 Everything works. Task completed.
