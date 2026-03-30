@@ -1,7 +1,9 @@
 
- You are tasked with creating a serverless function that performs the following tasks. Additionally, all cloud infrastructure must be provisioned using programming code. Use Python, Go or NodeJS.
 
-Task:
+# Task description:
+
+You are tasked with creating a serverless function that performs the following tasks. Additionally, all cloud infrastructure must be provisioned using programming code. Use Python, Go or NodeJS.
+
 #### 1. Set Up Cloud Infrastructure via Code
 
 **- Create a Cloud-Managed NoSQL Database:**
@@ -364,27 +366,27 @@ And we also need to install all needed libraries with `pip install` and configur
 ### The execution:
 
 1) Execute `create_function.py`. It will create all needed infrastructure and deploy our serverless function.
-   
-![[Pasted image 20260330060502.png]]
+2) 
+![](https://github.com/Briez-b/python-gcp-function/blob/main/Pasted%20image%2020260330060502.png)
 
 1) Execute url and see if new entry is in firestore database
-   
-   ![[Pasted image 20260330060624.png]]
+
+![](https://github.com/Briez-b/python-gcp-function/blob/main/Pasted%20image%20260330060624.png)
 
 Here we can see the database really created and new entry was written to database `bryshten-test3:
-![[Pasted image 20260330060716.png]]
+![](https://github.com/Briez-b/python-gcp-function/blob/main/Pasted%20image%20260330060716.png)
 
  Also check if alerts and function really work:
- 
- ![[Pasted image 20260330060948.png]]
+
+![](https://github.com/Briez-b/python-gcp-function/blob/main/Pasted%20image%20260330060948.png)
  
 And let's create incident by deleting database `bryshten-test3.py` and executing function again to be sure alert works
 
-![[Pasted image 20260330061216.png]]
+![](https://github.com/Briez-b/python-gcp-function/blob/main/Pasted%20image%20260330061216.png)
 
-![[Pasted image 20260330061228.png]]
+![](https://github.com/Briez-b/python-gcp-function/blob/main/Pasted%20image%20260330061228.png)
 
-![[Pasted image 20260330061629.png]]
+![](https://github.com/Briez-b/python-gcp-function/blob/main/Pasted%20image%20260330061629.png)
 
 
 Everything works. Task completed.
